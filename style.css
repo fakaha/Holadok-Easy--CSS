@@ -1,0 +1,207 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Source+Sans+Pro&display=swap');
+
+:root{
+  --blue-text: #101C45;
+  --blue-button: #203271;
+}
+
+.source-sans{
+  font-family: 'Source Sans Pro', sans-serif;;
+}
+
+.dm-sans{
+  font-family: 'DM Sans', sans-serif;
+}
+
+header{
+  margin-top: 58px;
+  display: flex;
+  justify-content: center;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.left-navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: start; 
+  gap: 93px;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img{
+  width: 24px;
+  height: 24px;
+}
+
+ul li{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.left-navigation ul{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.right-navigation ul{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 99;
+}
+
+.right-navigation ul li.book-now-button{
+  border: 1px solid var(--blue-text);
+  padding: 10px 25px;
+}
+/* END OF HEADER */
+
+main{
+  display: flex;
+  justify-content: center;
+}
+
+.container-main-content{
+  position: relative;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section{
+  color: var(--blue-text);
+  width: 457px;
+  height: 391px;
+}
+
+section .heading-section{
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+section .paragraf-section{
+  margin-bottom: 40px;
+}
+
+section .paragraf-section, button{
+  font-size: 18px;
+}
+
+section button{
+  padding: 15px 35px;
+  background-color: var(--blue-button);
+  color: white;
+  border: 0;
+}
+
+aside{
+  position: relative;
+}
+
+aside img.green-background{
+  position: absolute;
+  top: -55px;
+  z-index: -99;
+}
+
+.card{
+  width: 292px;
+  height: 182px;
+  background-color: #fff;
+  position: absolute;
+  top: 5%;
+  left: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.heading-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profil{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-quotes img{
+  width: 8px;
+  height: 18px;
+}
+
+/* END OF MAIN */
+
+footer{
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: -5px;
+  margin-bottom: 32px;
+}
+
+.container-content-footer{
+  background-color: var(--blue-button);
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 32px;
+}
+
+.contents-footer{
+  display: flex; 
+  gap: 25px;
+}
+
+.contents-footer img{
+  width: 40px;
+  height: 40px;
+}
+
+.text-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.text-footer p{
+  opacity: 60%;
+  font-size: 16px;
+}
